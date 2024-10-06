@@ -71,7 +71,7 @@ const Home = () => {
 
   const fetchApodData = async () => {
     try {
-      const response = await fetch(`https://nasa-app-backenddd.onrender.com/api/eonet`);
+      const response = await fetch(`https://nasa-app-backenddd.onrender.com/api/apod`);
       const data = await response.json();
       setApod(data);
     } catch (error) {
